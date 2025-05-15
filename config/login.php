@@ -4,7 +4,7 @@ require_once('config.php');
 $email = $_POST['email'];
 $password_hash = $_POST['password_hash'];
 
-$query = "SELECT * FROM usuario WHERE email = '$email' AND password_hash = '$password_hash'";
+$query = "SELECT * FROM Usuario WHERE email = '$email' AND password_hash = '$password_hash'";
 $result = $conexion->query($query);
 
 if ($result && $result->num_rows > 0) {
