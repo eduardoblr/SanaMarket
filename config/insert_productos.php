@@ -13,5 +13,5 @@ VALUES
 ('$nombre', '$precio', '$stock', '$categoria', '$descripcion', '$fecha_creacion', '$activo')";
 $conexion->query($query);
 
-header("Location: /proyecto/modulos/productos/lista_productos.php");
+header("Location: /modulos/productos/lista_productos.php");
 ?>

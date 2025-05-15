@@ -11,5 +11,5 @@ $id= $_POST['id'];
 $query= "UPDATE Producto SET nombre='$nombre', precio='$precio', stock='$stock', categoria_id='$categoria', descripcion='$descripcion' WHERE producto_id = $id";
 $conexion->query($query);
 
-header("Location: /proyecto/modulos/productos/lista_productos.php");
+header("Location: /modulos/productos/lista_productos.php");
 ?>

@@ -18,15 +18,15 @@ if ($result && $result->num_rows > 0) {
 
     // Redirigir según el rol
     if ($rol === 'admin') {
-        header("Location: /proyecto/modulos/productos/lista_productos.php");
+        header("Location: /modulos/productos/lista_productos.php");
     } elseif ($rol === 'client') {
-        header("Location: /proyecto/modulos/productos/productos.php"); 
+        header("Location: /modulos/productos/productos.php"); 
     } else {
         echo "Rol no reconocido.";
     }
 
 } else {
     // Si no existe el usuario
-    header("Location: /proyecto/index.php");
+    header("Location: /index.php");
 }
 ?>
