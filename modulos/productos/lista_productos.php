@@ -28,7 +28,7 @@ $result = $conexion->query($query);
                                 <p><strong>S/ <?php echo number_format($row['precio'], 2); ?></strong></p>
                                 <p class="text-muted">Stock: <?php echo $row['stock']; ?></p>
                                 <a href="form_update_productos.php?id=<?php echo $row['producto_id']; ?>" class="btn btn-success">Editar</a>
-                                <a href="/proyecto/config/delete_productos.php?id=<?php echo $row['producto_id']; ?>" class="btn btn-danger">Eliminar</a>
+                                <a href="/config/delete_productos.php?id=<?php echo $row['producto_id']; ?>" class="btn btn-danger">Eliminar</a>
                             </div>
                         </div>
                     </div>

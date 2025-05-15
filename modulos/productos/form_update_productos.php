@@ -25,7 +25,7 @@ $record = $result2->fetch_assoc();
                 <h1>Insertar Producto<a href="lista_productos.php" class="btn btn-secondary">Regresar</a></h1>
             </div>
         </div>
-        <form action="/proyecto/config/update_productos.php" method="POST">
+        <form action="/config/update_productos.php" method="POST">
             <div class="row mt-5">
                     <div class="col-6">
                         <label for="nombre" class="form-label">Nombre del producto</label>
