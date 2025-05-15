@@ -1,9 +1,9 @@
 <?php
 require_once('../../config/config.php');
 $id = $_GET['id'];
-$query = "SELECT * FROM categoria";
+$query = "SELECT * FROM Categoria";
 $result = $conexion->query($query);
-$query2 = "SELECT * FROM producto WHERE producto_id = $id";
+$query2 = "SELECT * FROM Producto WHERE producto_id = $id";
 $result2 = $conexion->query($query2);
 $record = $result2->fetch_assoc();
 ?>

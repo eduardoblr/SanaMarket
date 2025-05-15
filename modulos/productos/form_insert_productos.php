@@ -1,6 +1,6 @@
 <?php
 require_once('../../config/config.php');
-$query = "SELECT * FROM categoria";
+$query = "SELECT * FROM Categoria";
 $result = $conexion->query($query);
 ?>
 

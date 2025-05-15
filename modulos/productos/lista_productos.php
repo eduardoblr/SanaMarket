@@ -1,6 +1,6 @@
 <?php
 require_once('../../config/config.php');
-$query = "SELECT * FROM producto";
+$query = "SELECT * FROM Producto";
 $result = $conexion->query($query);
 ?>
 

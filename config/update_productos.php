@@ -8,7 +8,7 @@ $descripcion = $_POST['descripcion'];
 $fecha_creacion = date('Y-m-d'); 
 $activo = 1;
 $id= $_POST['id'];
-$query= "UPDATE producto SET nombre='$nombre', precio='$precio', stock='$stock', categoria_id='$categoria', descripcion='$descripcion' WHERE producto_id = $id";
+$query= "UPDATE Producto SET nombre='$nombre', precio='$precio', stock='$stock', categoria_id='$categoria', descripcion='$descripcion' WHERE producto_id = $id";
 $conexion->query($query);
 
 header("Location: /proyecto/modulos/productos/lista_productos.php");
