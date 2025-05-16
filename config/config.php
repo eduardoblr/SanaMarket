@@ -7,4 +7,5 @@ $conexion = new mysqli($host, $usuario, $contraseña, $nombre_bd);
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
 }
+define('BASE_URL','http://13.83.9.14/')
 ?>
