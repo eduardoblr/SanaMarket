@@ -24,7 +24,7 @@ $record = $result2->fetch_assoc();
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">SanaMarket</a>
             <div class="ms-auto">
-                <a class="btn btn-light" href="/config/logout.php">Cerrar Sesión</a>
+                <a class="btn btn-light" href="../../config/logout.php">Cerrar Sesión</a>
         </div>
     </nav>
     <div class="container mt-5">
