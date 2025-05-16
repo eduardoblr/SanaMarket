@@ -1,5 +1,6 @@
 <?php
 require_once('../../config/config.php');
+require_once('../../config/validate_session.php');
 $query = "SELECT * FROM Producto";
 $result = $conexion->query($query);
 ?>
@@ -14,7 +15,13 @@ $result = $conexion->query($query);
     <title>Catálogo de Productos - SanaMarket</title>
 </head>
 <body>
-    <?php include('../../includes/header.php'); ?>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">SanaMarket</a>
+            <div class="ms-auto">
+                <a class="btn btn-light" href="config/logout.php">Cerrar Sesión</a>
+        </div>
+    </nav>
     <div class="container mt-5">
         <h2 class="text-center mb-4">Lista de Productos</h2>
         <div class="row">

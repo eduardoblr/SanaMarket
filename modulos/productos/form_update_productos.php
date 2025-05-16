@@ -1,5 +1,7 @@
 <?php
 require_once('../../config/config.php');
+require_once('../../config/validate_session.php');
+
 $id = $_GET['id'];
 $query = "SELECT * FROM Categoria";
 $result = $conexion->query($query);
@@ -18,7 +20,13 @@ $record = $result2->fetch_assoc();
     <title>Insertar Producto</title>
 </head>
 <body>
-    <?php include('../../includes/header.php'); ?>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">SanaMarket</a>
+            <div class="ms-auto">
+                <a class="btn btn-light" href="config/logout.php">Cerrar Sesión</a>
+        </div>
+    </nav>
     <div class="container mt-5">
         <div class="row mt-5">
             <div class ="col">
