@@ -24,7 +24,7 @@ $result = $conexion->query($query);
         </div>
     </nav>
     <div class="container mt-5">
-        <h2 class="text-center mb-4">Lista de Productos<a href="form_insert_productos.php" class="btn btn-secondary">Añadir</a></h2>
+        <h2 class="text-center mb-4">Catálogo<a href="form_insert_productos.php" class="btn btn-secondary">Añadir</a></h2>
         <div class="row">
             <?php while ($row = $result->fetch_assoc()): ?>
                 <?php if ($row['activo'] == 1 && $row['stock'] > 0): ?>
